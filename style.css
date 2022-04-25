@@ -1,90 +1,42 @@
 * {
-  margin: 50px;
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 15px;
-    border-style: solid;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
-  background-color: rgb(138, 43, 226);
+  
 }
-.header {
+header {
   display: flex;
-  justify-content: right;
-  align-content: center;
-  background-color: rgb(1, 12, 12);
-  background-image: url(.vscode\img\galaxy-space-background-free-thumb28.png);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  border-radius: 15px;
-    border-style: solid;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+  flex-direction: column;
+  align-items: center;
+
+
+
 }
 h1 {
   display: flex;
-  justify-content: space-around;
-  height: 3rem;
-  align-content: center;
-
-
- border-radius: 15px;
-    border-style: solid;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7); background-color: rgb(60, 97, 199);
 }
 h2 {
   display: flex;
-  height: 5rem;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(61, 27, 212);
 }
 body {
   display: flex;
-  width: 90%;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
-  background-image: url(.vscode\img\galaxy-space-background-free-thumb28.png);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-color: rgb(204, 189, 204);
 
 }
 .navbar {
   display: flex;
-  justify-content: space-around;
-  height: 70px;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.headshot {
+  height: 25%;
   width: auto;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  border-radius: 15px;
-    border-style: solid;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
-  background-color: rgb(39, 33, 15);
 }
 .navbar ul {
   display: flex;
-  width: auto;
-  margin: 10, 10;
-  border-radius: 15px;
-    border-style: solid;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
-  background-color: rgb(226, 111, 10);
 }
 section {
   display: flex;
-  height: 75rem;
-  width: 60rem;
-  justify-content: space-around;
-  align-content: center;
-  background-color: rgb(49, 49, 51);
+
 }
 footer {
   display: flex;
-  height: 120px;
-  width: auto;
-  justify-content: space-around;
-  align-content: center;
-  background-color: teal;
-  align-items: center;
 }
