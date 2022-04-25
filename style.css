@@ -20,10 +20,15 @@ body {
   flex-direction: column;
 
 }
+.imageAndLinks {
+  display: flex;
+  flex-direction: row;
+}
 .navbar {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
 }
 .headshot {
@@ -32,11 +37,19 @@ body {
 }
 .navbar ul {
   display: flex;
+  height: 100%;
 }
 section {
   display: flex;
 
 }
+.aboutImageAndNav {
+  position: relative;
+  text-align:center;
+  max-height: 10%;
+  max-width: auto;
+}
 footer {
   display: flex;
+  justify-content: space-evenly;
 }
