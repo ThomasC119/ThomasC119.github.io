@@ -16,15 +16,50 @@
 
 <body>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="#" id="about">About</a>
-        <a href="#" id="projects">Projects</a>
-        <a href="#" id="links">Links</a>
-        <a href="#" id="contact">Contact</a>
+    <<div class="tab">
+        <button class="tablinks" onmouseover="openTab(event, 'AboutMe')">AboutMe</button>
+        <button class="tablinks" onmouseover="openTab(event, 'Projects')">Projects</button>
+        <button class="tablinks" onmouseover="openTab(event, 'Links')">Links</button>
+        <button class="tablinks" onmouseover="openTab(event, 'Contact')">Contact</button>
       </div>
-
-    <br>
-    <br>
+      
+      <div id="AboutMe" class="tabcontent">
+        <h3>AboutMe</h3>
+        <p>AboutMe is the capital city of England.</p>
+      </div>
+      
+      <div id="Projects" class="tabcontent">
+        <h3>Projects</h3>
+        <p>Projects is the capital of France.</p> 
+      </div>
+      
+      <div id="Links" class="tabcontent">
+        <h3>Links</h3>
+        <p>Links is the capital of Japan.</p>
+      </div>
+      
+      <div id="Contact" class="tabcontent">
+          <h3>Contact</h3>
+          <p>Links is the capital of Japan.</p>
+        </div>
+      
+      <div class="clearfix"></div>
+      
+      <script>
+      function openTab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
 
     <div class="imageAndLinks">
    
